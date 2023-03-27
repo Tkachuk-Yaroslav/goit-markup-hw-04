@@ -168,8 +168,14 @@ body {
 
 /**-------------------------------HERO----------------------------*/
 
-.hero {
+.hero {    
     background-color: var(--main-page-bg, #2E2F42);
+    background-image:linear-gradient(to right, rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)), url(../images/hero-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1440px;
+    margin: 0 auto;
     padding-top: 188px;
     padding-bottom: 188px;
 }
