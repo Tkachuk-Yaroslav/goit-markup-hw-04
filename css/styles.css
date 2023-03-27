@@ -245,6 +245,21 @@ body {
     margin-right: 0;
 }
 
+.strategy-list-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.strategy-icon {
+    height: 64px;
+    width: 64px;
+}
+
 .strategy-list-subtitle {
     font-weight: 500;
     font-size: 20px;
