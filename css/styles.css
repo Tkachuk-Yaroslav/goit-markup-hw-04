@@ -1,0 +1,477 @@
+:root {
+    --main-btn-bg: #4D5AE5;
+    --secondary-btn-bg: #F4F4FD;
+    --btn-bg-in-hover: #404BBF;
+    --address-hover: #404BBF;
+    --main-btn-color: #FFFFFF;
+    --secondary-btn-color: #4D5AE5;
+    --address-color: #434455;
+    --main-title-color: #FFFFFF;
+    --main-page-text: #434455;
+    --secondary-page-text: #2E2F42;
+    --first-logo-part: #4D5AE5;
+    --second-header-logo-part: #2E2F42;
+    --second-footer-logo-part: #F4F4FD;
+    --footer-text-color: #F4F4FD;
+    --main-page-bg: #2E2F42;
+    --secondary-page-bg: #F4F4FD;
+    --main-portfolio-color: #2E2F42;
+    --secondary-portfolio-color: #434455;
+    --team-list-bg: #ffffff;
+}
+/*КОЛЬОРОВІ ЗМІННІ
+--main-btn-bg: #4D5AE5; головна заливка кнопки
+--secondary-btn-bg: #F4F4FD; другорядна заливка кнопки
+--main-btn-color: #FFFFFF; головний колір кнопки
+--secondary-btn-color: #4D5AE5;другорядний колір кнопки
+--address-color: #434455; колір в тезі адрес
+--main-title-color: #FFFFFF; колір заголовку H1
+--main-page-text: #434455; головний текст сторінки - абзац
+--secondary-page-text: #2E2F42; другорядний текст сторінки заголовки
+--first-logo-part: #4D5AE5; перша частина лого
+--second-header-logo-part: #2E2F42; друга частина в хедері
+--second-footer-logo-part: #F4F4FD; в футері
+--footer-text: color: #E7E9FC; текст в фтері - абзац
+--main-page-bg: #2E2F42; головний бекграунд сторінки
+--secondary-page-bg: #F4F4FD; другорядний бекграунд сторінки
+--main-portfolio-color: #2E2F42 головний колір портфоліо
+--secondary-portfolio-color: #434455; другий колір портфоліо
+
+*/
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background-color: #ffffff;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    /*outline: 2px solid tomato;*/
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+
+/**-------------------------------HEADER----------------------------*/
+.header {
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--first-logo-part, #4D5AE5);
+    margin-right: 76px;
+}
+
+.part-of-logo {
+    color: var(--second-header-logo-part, #2E2F42);
+}
+
+.header-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header-list-item {
+}
+
+
+.header-list-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-page-text, #2E2F42);
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-list-link:hover,
+.header-list-link:focus {
+    color: var(--btn-bg-in-hover, #404BBF);
+}
+.header-address {
+    font-style: normal;
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
+}
+
+.address-list-item {
+
+}
+
+.address-list-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;    
+    letter-spacing: 0.02em;
+    color: var(--address-color, #434455);
+    padding-bottom: 24px;
+    padding-top: 24px;
+    display: block;
+}
+
+.address-list-link:hover,
+.address-list-link:focus {
+    color: var(--address-hover, #404BBF);
+}
+
+/**-------------------------------HERO----------------------------*/
+
+.hero {
+    background-color: var(--main-page-bg, #2E2F42);
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;    
+    color: var(--main-title-color, #FFFFFF);
+
+    
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 496px;
+}
+
+.hero-btn {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--main-btn-color, #ffffff);
+    background: var(--main-btn-bg, #4D5AE5);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0 auto;
+    border: 1px solid #4D5AE5;
+    border-radius: 4px;
+    min-width: 169px;    
+    padding: 16px 32px;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--btn-bg-in-hover, #404BBF);
+    border: 1px solid transparent;
+}
+
+/**-------------------------------STRATEGY----------------------------*/
+
+
+.strategy {
+    padding-bottom: 0;
+}
+
+.strategy-title {
+
+}
+
+.strategy-list {
+    display: flex;
+}
+
+.strategy-list-item {
+    width: calc((100% - 72px) / 4);
+    margin-right: 24px;
+}
+.strategy-list-item:last-child {
+    margin-right: 0;
+}
+
+.strategy-list-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--secondary-page-text, #2E2F42);
+    margin-bottom: 8px;
+}
+
+.strategy-list-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-page-text, #434455);
+}
+
+/**-------------------------------WORK----------------------------*/
+.work {
+
+}
+
+.work-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--secondary-page-text, #2E2F42);
+    margin-bottom: 72px;
+}
+
+.work-list {
+    display: flex;
+}
+
+.work-list-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.work-list-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+/**-------------------------------OUR TEAM----------------------------*/
+.team {
+    background-color: var(--secondary-page-bg, #F4F4FD);
+}
+
+.team-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--secondary-page-text, #2E2F42);
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-list-item {
+    background-color: var(--team-list-bg, #FFFFFF);
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-item + .team-list-item{
+    margin-left: 24px;
+}
+
+.team-card-padding {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.team-list-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--secondary-page-text, #2E2F42);
+    margin-bottom: 8px;
+}
+
+.team-list-text {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--main-page-text, #434455);
+}
+
+/**-------------------------------FOOTER----------------------------*/
+
+.footer {
+    background-color: var(--main-page-bg, #2E2F42);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--first-logo-part, #4D5AE5);
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.footer-part-of-logo {
+    color: var(--second-footer-logo-part, #F4F4FD);
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--footer-text-color, #F4F4FD);
+    max-width: 264px;
+}
+
+/**-------------------------------portfolio----------------------------*/
+/**-------------------------------HEADER-----------------------------*/
+
+.header-border {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+/**-------------------------------MAIN----------------------------*/
+
+
+.main {
+
+}
+
+.filter {
+padding-top: 96px;
+}
+
+.filter-title {
+
+}
+
+.filter-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.filter-list-item {
+    margin-right: 24px;
+}
+.filter-list-item:last-child {
+    margin-right: 0;
+}
+/*.filter-list-item + .filter-list-item{
+    margin-left: 24px;
+}*/
+
+.filter-list-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    display: flex;
+    align-items: center;
+    
+    background-color: var(--secondary-btn-bg, #F4F4FD);
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    color: var(--secondary-btn-color, #4D5AE5);
+    cursor: pointer;
+    padding: 12px 24px;
+}
+
+.filter-list-btn:hover,
+.filter-list-btn:focus {
+    background-color: var(--btn-bg-in-hover, #404BBF);
+    color: var(--main-btn-color, #FFFFFF);
+    border: 1px solid transparent;
+}
+.result-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.result-list-item {
+    width: calc((100% - 48px) / 3);
+    margin-right: 24px;
+    margin-bottom: 48px;
+}
+
+.result-list-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.result-list-item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+.result-link {
+
+}
+
+.portfolio-card-padding {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
+.result-list-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--main-portfolio-color, #2E2F42);
+    margin-bottom: 8px;
+}
+
+.result-list-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-portfolio-color, #434455);
+}
