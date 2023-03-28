@@ -394,6 +394,9 @@ body {
     fill: #f4f4fd;
 }
 
+
+
+
 /**-------------------------------CUSTOMERS----------------------------*/
 
 .customers {
@@ -424,6 +427,12 @@ body {
     
 }
 
+
+.customer-list-link:hover .customers-icon,
+.customer-list-link:focus .customers-icon {
+    fill: #404BBF;
+}
+
 .customer-wrapper {
     padding: 16px 32px;
     border: 1px solid #8E8F99;
@@ -431,10 +440,17 @@ body {
     height: 88px;
 }
 
+.customer-wrapper:hover,
+.customer-wrapper:focus {
+    border: 1px solid #404BBF;
+    /* border-color: #404BBF; */
+}
+
 .customers-icon {
     display: block;
     width: 104px;
     height: 56px;
+    fill: #8E8F99;
 }
 
 
