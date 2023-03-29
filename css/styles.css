@@ -18,6 +18,14 @@
     --main-portfolio-color: #2E2F42;
     --secondary-portfolio-color: #434455;
     --team-list-bg: #ffffff;
+    --footer-soc-main-bg: #4D5AE5;
+    --footer-soc-seconf-bg: #31D0AA;
+    --main-soc-icon-color: #ffffff;
+    --second-soc-scon-color: #F4F4FD;
+    --customers-icon-fill: #8E8F99;
+    --team-soc-bg: #4D5AE5;
+    --team-soc-bg-hover: #404BBF;
+    --strategy-icon-bg: #F4F4FD;
 }
 /*КОЛЬОРОВІ ЗМІННІ
 --main-btn-bg: #4D5AE5; головна заливка кнопки
@@ -260,7 +268,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 112px;
-    background-color: #F4F4FD;
+    background-color: var(--strategy-icon-bg, #F4F4FD);
     border-radius: 4px;
     margin-bottom: 8px;
 }
@@ -383,15 +391,16 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #4D5AE5;;
+    background-color: var(--team-soc-bg, #4D5AE5);
 }
 
 .team-soc-link:hover, .team-soc-link:focus {
-    background-color: #404BBF;
+    background-color: var(--team-soc-bg-hover, #404BBF);
+    
 }
 
 .team-soc-icon {
-    fill: #f4f4fd;
+    fill: var(--second-soc-scon-color, #f4f4fd);
 }
 
 
@@ -443,14 +452,13 @@ body {
 .customer-wrapper:hover,
 .customer-wrapper:focus {
     border: 1px solid #404BBF;
-    /* border-color: #404BBF; */
 }
 
 .customers-icon {
     display: block;
     width: 104px;
     height: 56px;
-    fill: #8E8F99;
+    fill: var(--customers-icon-fill, #8E8F99);
 }
 
 
@@ -465,6 +473,7 @@ body {
 
 .footer-flex {
     display: flex;
+    align-items: flex-start;
 }
 
 .footer-part-one {
@@ -499,16 +508,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* display: block; */
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #4D5AE5;
+    background-color: var(--footer-soc-main-bg, #4D5AE5);
+}
+
+
+.footer-soc-link:hover .footer-soc-icon,
+.footer-soc-link:focus .footer-soc-icon {
+    fill: var(--second-soc-scon-color, #F4F4FD);
+} 
+
+.footer-soc-link:hover, 
+.footer-soc-link:focus {
+    background-color: var(--footer-soc-seconf-bg, #31D0AA);
 }
 
 .footer-soc-icon {
-    fill: #FFFFFF;
+    fill: var(--main-soc-icon-color, #ffffff);
 }
+
 
 .footer-logo {
     font-family: 'Raleway', sans-serif;
