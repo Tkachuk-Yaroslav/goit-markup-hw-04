@@ -21,7 +21,7 @@
     --footer-soc-main-bg: #4D5AE5;
     --footer-soc-seconf-bg: #31D0AA;
     --main-soc-icon-color: #ffffff;
-    --second-soc-scon-color: #F4F4FD;
+    --second-soc-icon-color: #F4F4FD;
     --customers-icon-fill: #8E8F99;
     --team-soc-bg: #4D5AE5;
     --team-soc-bg-hover: #404BBF;
@@ -102,6 +102,9 @@ body {
 
 /**-------------------------------HEADER----------------------------*/
 .header {
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -192,7 +195,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     max-width: 1440px;
-    height: 600px;
     margin: 0 auto;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -233,6 +235,8 @@ body {
     border-radius: 4px;
     min-width: 169px;    
     padding: 16px 32px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -395,6 +399,7 @@ body {
     height: 100%;
     border-radius: 50%;
     background-color: var(--team-soc-bg, #4D5AE5);
+    color: var(--second-soc-icon-color, #F4F4FD);
 }
 
 .team-soc-link:hover, .team-soc-link:focus {
@@ -403,7 +408,7 @@ body {
 }
 
 .team-soc-icon {
-    fill: var(--second-soc-scon-color, #f4f4fd);
+    fill: currentColor;
 }
 
 
@@ -515,12 +520,18 @@ body {
     height: 100%;
     border-radius: 50%;
     background-color: var(--footer-soc-main-bg, #4D5AE5);
+    color: var(--main-soc-icon-color, #ffffff);
 }
 
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: var(--footer-soc-seconf-bg, #31D0AA);
+    color: var(--second-soc-icon-color, #F4F4FD);
+}
 
-.footer-soc-link:hover .footer-soc-icon,
+/* .footer-soc-link:hover .footer-soc-icon,
 .footer-soc-link:focus .footer-soc-icon {
-    fill: var(--second-soc-scon-color, #F4F4FD);
+    fill: var(--second-soc-icon-color, #F4F4FD);
 } 
 
 .footer-soc-link:hover, 
@@ -530,6 +541,10 @@ body {
 
 .footer-soc-icon {
     fill: var(--main-soc-icon-color, #ffffff);
+} */
+
+.footer-soc-icon {
+    fill: currentColor;
 }
 
 
@@ -643,12 +658,11 @@ padding-top: 96px;
 }
 
 .result-link {
-
+    display: block;
 }
 
 .result-link:hover,
 .result-link:focus {
-    display: block;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08);
